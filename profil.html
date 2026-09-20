@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Desa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html" aria-current="page">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section" id="profil">
+  <div class="section__head reveal">
+    <span class="eyebrow">Profil</span>
+    <h2>Tanah, Sejarah, dan Batas Wilayah</h2>
+  </div>
+  <div class="profil-grid reveal-group">
+    <article class="profil-card reveal">
+      <h3>Sejarah Singkat</h3>
+      <p>Desa Sumbereja merupakan salah satu desa yang terletak di Kecamatan Pebayuran, Kabupaten Bekasi. Mengandalkan sektor agraris, sebagian besar wilayah wilayahnya didominasi oleh lahan persawahan produktif yang menjadi urat nadi perekonomian dan kesejahteraan warganya.</p>
+    </article>
+    <article class="profil-card reveal">
+      <h3>Letak & Batas Wilayah</h3>
+      <ul class="kv-list">
+        <li><span>Kecamatan</span><span>Pebayuran</span></li>
+        <li><span>Kabupaten</span><span>Bekasi</span></li>
+        <li><span>Provinsi</span><span>Jawa Barat</span></li>
+        <li><span>Kode Pos</span><span>17710</span></li>
+        <li><span>Luas Wilayah</span><span>599,2 Ha</span></li>
+        <li><span>Ketinggian</span><span>5 mdpl</span></li>
+      </ul>
+    </article>
+    <article class="profil-card reveal">
+      <h3>Batas Desa</h3>
+      <ul class="kv-list">
+        <li><span>Utara</span><span>Desa Sumber Urip</span></li>
+        <li><span>Selatan</span><span>Desa Sumbersari</span></li>
+        <li><span>Timur</span><span>Kab. Karawang</span></li>
+        <li><span>Barat</span><span>Desa Karang Jaya</span></li>
+      </ul>
+    </article>
+    <article class="profil-card reveal">
+      <h3>Wilayah Dusun</h3>
+      <div class="tag-row">
+        <span class="tag">Kp. Pamahan</span><span class="tag">Kp. Cecendet</span><span class="tag">Kp. Pacing Lio</span><span class="tag">Kp. Tegal Pacing</span><span class="tag">Kp. Kobak Cina</span><span class="tag">Kp. Sarian Untung</span>
+      </div>
+    </article>
+    <article class="profil-card profil-card--visi reveal">
+      <h3>Visi</h3>
+      <p class="visi-text">"Mewujudkan Sumbereja yang mandiri secara pangan, tertib administrasi, dan terbuka bagi seluruh warganya."</p> <br>
+      <h3>Misi</h3>
+      <p class="visi-text">"Meningkatkan pelayanan publik, membangun infrastruktur desa yang merata, dan memberdayakan ekonomi kerakyatan secara berkelanjutan."</p>
+    </article>
+  </div>
+</section>
+
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak Langsung</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

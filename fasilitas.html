@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fasilitas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html" aria-current="page">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section" id="fasilitas">
+  <div class="section__head reveal">
+    <span class="eyebrow">Fasilitas Umum</span>
+    <h2>Sekolah, Kesehatan, dan Peta Desa</h2>
+  </div>
+  <div class="fasilitas-grid reveal-group">
+    <div class="fasilitas-list reveal">
+      <h3>Pendidikan</h3>
+      <ul>
+        <li>SD Negeri Sumbereja 01 — Kp. Kobak Cina</li>
+        <li>SD Negeri Sumbereja 02 — Kp. Cecendet</li>
+        <li>SD Negeri Sumbereja 03 — Kp. Pacing Lio</li>
+        <li>SD Negeri Sumbereja 04 — Kp. Tegal Pacing</li>
+        <li>2 unit Taman Kanak-Kanak (TK)</li>
+        <li>1 unit Madrasah Ibtidaiyah</li>
+      </ul>
+      <h3>Kesehatan</h3>
+      <ul>
+        <li>6 unit Posyandu</li>
+        <li>7 unit Poliklinik/Balai Pengobatan</li>
+        <li>1 unit Rumah Bersalin</li>
+        <li>1 unit Toko Obat</li>
+        <li>3 Dokter Umum, 6 Bidan, 9 Perawat</li>
+        <li>Klinik Ihsan Medika Perbayuran</li>
+      </ul>
+    </div>
+    <div class="map-embed reveal">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31731.81577708518!2d107.1906!3d-6.1963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6984189e34cdbd%3A0x1d3f5e3e23f114c0!2sSumbereja%2C%20Pebayuran%2C%20Bekasi%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Peta Desa Sumbereja">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="fasilitas-grid reveal-group" style="margin-top:2.5rem;">
+    <div class="fasilitas-list reveal">
+      <h3>Peribadatan</h3>
+      <ul>
+        <li>5 unit Masjid</li>
+        <li>12 unit Langgar/Musholla</li>
+      </ul>
+    </div>
+    <div class="fasilitas-list reveal">
+      <h3>Olahraga</h3>
+      <ul>
+        <li>3 unit Lapangan Bulu Tangkis</li>
+        <li>1 unit Lapangan Voli</li>
+        <li>1 unit Meja Pingpong</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak Langsung</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

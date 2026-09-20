@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertanian</title>
+<meta name="description" content="Profil pertanian Desa Sumbereja: komoditas, luas lahan, kelompok tani, dan musim tanam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<!-- NAV (sama seperti index.html, ditambah breadcrumb kecil) -->
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html" aria-current="page">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO HALAMAN -->
+<section class="tani-hero">
+  <span class="eyebrow">Potensi Desa — Pertanian</span>
+  <h1>Sawah yang Menghidupi Sumbereja</h1>
+  <p class="tani-hero__lede">Sebagian besar warga Desa Sumbereja menggantungkan mata pencaharian pada pertanian padi, didukung aliran air dari sekitar Sungai Citarum. Halaman ini merangkum data dan informasi seputar pertanian di desa.</p>
+  <a href="potensi.html" class="tani-back">← Kembali ke Potensi Desa</a>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<!-- RINGKASAN ANGKA -->
+<section class="section">
+  <div class="fact-strip">
+    <div class="fact-strip__item"><span class="fact-strip__num">560</span><span class="fact-strip__label">Pemilik Usaha Pertanian</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">1.267</span><span class="fact-strip__label">Buruh/Karyawan Pengumpul</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">485</span><span class="fact-strip__label">Ha Sawah Irigasi Teknis</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">6</span><span class="fact-strip__label">Ton/Ha Hasil Panen Padi</span></div>
+  </div>
+
+  <div class="data-table" style="margin-top:1.6rem;">
+    <div class="data-row data-row--head"><span>Rincian Pelaku Usaha Pertanian</span><span>Jumlah</span></div>
+    <div class="data-row"><span>Jumlah Pemilik Usaha</span><span>560 orang</span></div>
+    <div class="data-row"><span>Jumlah Pemilik Usaha Perorangan</span><span>560 orang</span></div>
+    <div class="data-row"><span>Jumlah Buruh/Karyawan Pengumpul</span><span>1.267 orang</span></div>
+  </div>
+</section>
+
+<div class="rule rule--alt" aria-hidden="true"></div>
+
+<!-- KOMODITAS -->
+<section class="section" id="komoditas">
+  <div class="section__head">
+    <span class="eyebrow">Komoditas</span>
+    <h2>Apa yang Ditanam di Sumbereja</h2>
+  </div>
+  <div class="profil-grid">
+    <article class="profil-card">
+      <h3>Padi (Komoditas Utama)</h3>
+      <p>Ditanam di atas 485 Ha sawah irigasi teknis, dengan hasil panen rata-rata 6 ton/Ha per musim tanam.</p>
+    </article>
+    <article class="profil-card">
+      <h3>Palawija &amp; Sayuran</h3>
+      <p>Sebagian lahan/pekarangan ditanami palawija atau sayuran sebagai selingan musim.</p>
+    </article>
+  </div>
+  <div class="tag-row" style="margin-top:1.5rem;">
+    <span class="tag">Padi Sawah Irigasi Teknis</span>
+    <span class="tag">Palawija</span>
+    <span class="tag">Sayuran Pekarangan</span>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<!-- MUSIM TANAM -->
+<section class="section" id="musim-tanam">
+  <div class="section__head">
+    <span class="eyebrow">Musim Tanam</span>
+    <h2>Kalender Tanam Sepanjang Tahun</h2>
+  </div>
+
+  <div class="season-table">
+    <div class="season-row season-row--head">
+      <span>Masa Tanam</span><span>Perkiraan Waktu</span><span>Kegiatan Utama</span>
+    </div>
+    <div class="season-row">
+      <span>MT 1 (Musim Hujan)</span><span>Okt – Mar</span><span>Tanam awal musim hujan, pengolahan lahan</span>
+    </div>
+    <div class="season-row">
+      <span>MT 2</span><span>Mar – Jul</span><span>Panen MT1, lanjut tanam MT2</span>
+    </div>
+    <div class="season-row">
+      <span>MT 3 (Musim Kemarau)</span><span>Jun – Okt</span><span>Bergantung ketersediaan air irigasi</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<!-- FLOATING ACTIONS: perbesar teks, kembali ke atas, hubungi WA -->
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

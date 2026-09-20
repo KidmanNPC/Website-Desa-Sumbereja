@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemerintahan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html" aria-current="page">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section" id="pemerintahan">
+  <div class="section__head reveal">
+    <span class="eyebrow">Pemerintahan</span>
+    <h2>Struktur & Perangkat Desa</h2>
+  </div>
+
+  <div class="org-container reveal">
+    <div class="org-tree">
+      <ul>
+        <!-- TINGKAT 1: KEPALA DESA -->
+        <li>
+          <div class="org-node org-node--lead">
+            <div class="org-info">
+              <span class="org-name">Radim Iryanto, S.Ap, M.Si</span>
+              <span class="org-role">Pj. Kepala Desa</span>
+            </div>
+          </div>
+
+          <!-- TINGKAT 2: SEKDES, KASI-KASI, KADUS-KADUS (semua langsung di bawah Kades) -->
+          <ul>
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">Ahmad Sobari</span>
+                  <span class="org-role">Sekretaris Desa</span>
+                </div>
+              </div>
+
+              <!-- TINGKAT 3: KAUR-KAUR (di bawah Sekdes) -->
+              <ul>
+                <li>
+                  <div class="org-node">
+                    <div class="org-info">
+                      <span class="org-name">Bandi</span>
+                      <span class="org-role">Kaur Umum &amp; TU</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="org-node">
+                    <div class="org-info">
+                      <span class="org-name">Yobi Firdaus Mahfud</span>
+                      <span class="org-role">Kaur Keuangan</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="org-node">
+                    <div class="org-info">
+                      <span class="org-name">H. Ade Mulyana</span>
+                      <span class="org-role">Kaur Perencanaan</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">Muhamad Arman</span>
+                  <span class="org-role">Kasi Pemerintahan</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">Hasbuna Ahmad Sauqy</span>
+                  <span class="org-role">Kasi Kesejahteraan</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">Muklis Suryana</span>
+                  <span class="org-role">Kasi Pelayanan</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">H. AA Nurkarim</span>
+                  <span class="org-role">Kepala Dusun I</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">Suhaemi</span>
+                  <span class="org-role">Kepala Dusun II</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="org-node org-node--mid">
+                <div class="org-info">
+                  <span class="org-name">H. Madi</span>
+                  <span class="org-role">Kepala Dusun III</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PERANGKAT PENDUKUNG & KELEMBAGAAN RT/RW -->
+<section class="section" id="perangkat-lain">
+  <div class="section__head reveal">
+    <span class="eyebrow">Selengkapnya</span>
+    <h2>Staff, RW, RT &amp; Kelembagaan Dusun</h2>
+  </div>
+
+  <div class="accordion reveal" id="perangkatAccordion">
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Staff Desa (9 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Emon Sugara</span><span>Staff</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Jamaludin</span><span>Staff</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Saepudin</span><span>Staff</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Oma Ilan</span><span>Staff</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>H. Sarya</span><span>Staff</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Dede Kurniawan</span><span>Staff</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Chaerudin</span><span>Staff</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Sukarda</span><span>Staff</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Alam/Lukman</span><span>Staff</span><span>Kp. Cecendet</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Poldes / Keamanan Desa (2 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>H. Warsa</span><span>Poldes</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Solahudin</span><span>Poldes</span><span>Kp. Kobak Cina</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Ketua RW (5 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Boan</span><span>Ketua RW. 001</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Abdul Rosid</span><span>Ketua RW. 002</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Suwandi</span><span>Ketua RW. 003</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Yusup Supriyatna</span><span>Ketua RW. 004</span><span>Kp. Tegal Pacing</span></div>
+          <div class="perangkat-row"><span>Somad</span><span>Ketua RW. 005</span><span>Kp. Kobak Cina</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Ketua RT (10 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Ida Faridah</span><span>Ketua RT. 001</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Iim Binti Junaedi</span><span>Ketua RT. 002</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Marni</span><span>Ketua RT. 003</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Marfuah</span><span>Ketua RT. 004</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Agus</span><span>Ketua RT. 005</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Misin</span><span>Ketua RT. 006</span><span>Kp. Tegal Pacing</span></div>
+          <div class="perangkat-row"><span>Asep</span><span>Ketua RT. 007</span><span>Kp. Tegal Pacing</span></div>
+          <div class="perangkat-row"><span>Rudi Hartono</span><span>Ketua RT. 008</span><span>Kp. Sarian Untung</span></div>
+          <div class="perangkat-row"><span>Komarudin</span><span>Ketua RT. 009</span><span>Kp. Kobak Cina</span></div>
+          <div class="perangkat-row"><span>Menor</span><span>Ketua RT. 010</span><span>Kp. Kobak Cina</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Satlinmas RT (10 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Jaya bin Dasim</span><span>Satlinmas RT. 001</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Anan</span><span>Satlinmas RT. 002</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Sanin</span><span>Satlinmas RT. 003</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Kusman</span><span>Satlinmas RT. 004</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Pulung</span><span>Satlinmas RT. 005</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Udan</span><span>Satlinmas RT. 006</span><span>Kp. Tegal Pacing</span></div>
+          <div class="perangkat-row"><span>Karna</span><span>Satlinmas RT. 007</span><span>Kp. Tegal Pacing</span></div>
+          <div class="perangkat-row"><span>Nasun</span><span>Satlinmas RT. 008</span><span>Kp. Sarian Untung</span></div>
+          <div class="perangkat-row"><span>Mulyadi</span><span>Satlinmas RT. 009</span><span>Kp. Kobak Cina</span></div>
+          <div class="perangkat-row"><span>Ojat</span><span>Satlinmas RT. 010</span><span>Kp. Kobak Cina</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Amil Dusun (4 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Mansur</span><span>Amil Dusun I</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>M. Unen</span><span>Amil Dusun II</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Ahmad Sanusi</span><span>Amil Dusun III</span><span>Kp. Kobak Cina</span></div>
+          <div class="perangkat-row"><span>Dadun/Mawin</span><span>Amil Dusun IV</span><span>Kp. Kobak Cina</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Lainnya (4 orang)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel">
+        <div class="perangkat-table">
+          <div class="perangkat-row perangkat-row--head"><span>Nama</span><span>Jabatan</span><span>Kampung</span></div>
+          <div class="perangkat-row"><span>Rain</span><span>Upas Desa I</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Sukri</span><span>Upas Desa II</span><span>Kp. Cecendet</span></div>
+          <div class="perangkat-row"><span>Unda</span><span>Driver</span><span>Kp. Pacing Lio</span></div>
+          <div class="perangkat-row"><span>Sarmin Saripudin</span><span>PSM</span><span>Kp. Cecendet</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak Langsung</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
