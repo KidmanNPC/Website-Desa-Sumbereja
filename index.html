@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desa Sumbereja</title>
+<meta name="description" content="Website profil Desa Sumbereja, Kecamatan Pebayuran, Kabupaten Bekasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="masthead" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html">Potensi Desa</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <!-- Foto asli Desa Sumbereja -->
+  <div class="hero__carousel" id="heroCarousel" aria-hidden="true">
+    <div class="hero__slide is-active" style="background-image:url('img/background.jpg')"></div>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="hero__dateline">Warta Digital Desa — Kecamatan Pebayuran, Kabupaten Bekasi</p>
+    <h1 class="hero__title">Desa<br>Sumbereja</h1>
+    <p class="hero__lede">Dari sawah di tepi Citarum, kami merawat tanah, mencatat warga, dan membuka jalan informasi untuk semua orang yang menyebut tempat ini rumah.</p>
+    <div class="hero__actions">
+      <a href="profil.html" class="btn btn--primary">Lihat Profil Desa</a>
+      <a href="layanan.html" class="btn btn--ghost">Syarat &amp; Layanan</a>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<!-- SEKILAS DESA -->
+<section class="section" id="sekilas">
+  <div class="section__head reveal">
+    <span class="eyebrow">Sekilas Desa</span>
+    <h2>Sumbereja dalam Ringkasan</h2>
+  </div>
+  <div class="profil-grid reveal-group">
+    <article class="profil-card reveal">
+      <h3><i class="fa-solid fa-wheat-awn"></i> Desa Agraris</h3>
+      <p>Sebagian besar wilayah desa berupa sawah produktif dengan padi sebagai komoditas utama warga.</p>
+    </article>
+    <article class="profil-card reveal">
+      <h3><i class="fa-solid fa-location-dot"></i> 6 Kampung</h3>
+      <p>Pamahan, Cecendet, Pacing Lio, Tegal Pacing, Kobak Cina, dan Sarian Untung membentuk wilayah Desa Sumbereja.</p>
+    </article>
+    <article class="profil-card reveal">
+      <h3><i class="fa-solid fa-school"></i> 6 Sekolah</h3>
+      <p>4 SD Negeri dan 2 Madrasah Ibtidaiyah tersebar di berbagai kampung untuk mendukung pendidikan anak desa.</p>
+    </article>
+    <article class="profil-card profil-card--visi reveal">
+      <h3>Visi Desa</h3>
+      <p class="visi-text">"Mewujudkan Sumbereja yang mandiri secara pangan, tertib administrasi, dan terbuka bagi seluruh warganya."</p>
+    </article>
+  </div>
+</section>
+
+<div class="rule rule--alt" aria-hidden="true"></div>
+
+<!-- JELAJAHI WEBSITE -->
+<section class="section" id="jelajahi">
+  <div class="section__head reveal">
+    <span class="eyebrow">Jelajahi Website</span>
+    <h2>Informasi Lengkap Desa Sumbereja</h2>
+  </div>
+  <div class="potensi-grid reveal-group">
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+      <h3>Profil &amp; Sejarah</h3>
+      <p>Sejarah desa, letak geografis, batas wilayah, dan visi-misi.</p>
+      <a href="profil.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
+      <h3>Pemerintahan</h3>
+      <p>Struktur dan perangkat desa yang menjabat saat ini.</p>
+      <a href="pemerintahan.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+      <h3>Data Warga</h3>
+      <p>Jumlah penduduk, kepala keluarga, dan statistik desa.</p>
+      <a href="data-warga.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+      <h3>Potensi Desa</h3>
+      <p>Pertanian, peternakan, dan perdagangan warga.</p>
+      <a href="potensi.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>
+      <h3>Warta Desa</h3>
+      <p>Kabar dan kegiatan terbaru dari lingkungan desa.</p>
+      <a href="warta.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
+      <h3>Layanan Publik</h3>
+      <p>Syarat dan cara mengurus surat-menyurat di kantor desa.</p>
+      <a href="layanan.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-images"></i></span>
+      <h3>Fasilitas &amp; Galeri</h3>
+      <p>Sekolah, kesehatan, peta desa, dan dokumentasi kegiatan.</p>
+      <a href="fasilitas.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+    <article class="potensi-card reveal">
+      <span class="potensi-card__icon" aria-hidden="true"><i class="fa-solid fa-comment-dots"></i></span>
+      <h3>Pusat Pengaduan</h3>
+      <p>Sampaikan pengaduan atau aspirasi Anda langsung ke desa.</p>
+      <a href="pengaduan.html" class="potensi-card__link">Buka halaman →</a>
+    </article>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak Langsung</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

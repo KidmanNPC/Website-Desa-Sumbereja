@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layanan Publik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html" aria-current="page">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section" id="layanan">
+  <div class="section__head reveal">
+    <span class="eyebrow">Layanan Publik</span>
+    <h2>Mengurus Surat & Keperluan Warga</h2>
+  </div>
+  <div class="accordion reveal" id="accordion">
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Pengantar KTP / KK</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Bawa fotokopi KK, KTP lama (jika perpanjangan). Surat pengantar dari RT/RW diperlukan.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Keterangan Usaha</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Diperlukan untuk pengajuan bantuan UMKM atau perizinan usaha kecil. Bawa KTP dan keterangan jenis usaha.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Keterangan Domisili</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Isi syarat &amp; alur resmi dari kantor desa, misalnya: fotokopi KTP/KK, surat pengantar RT/RW.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Keterangan Tidak Mampu (SKTM)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Untuk keperluan bantuan sosial/beasiswa. Isi syarat resmi: KTP, KK, surat pengantar RT/RW, dan verifikasi kondisi ekonomi oleh perangkat desa.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Pengantar Nikah (N1–N4)</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Isi syarat lengkap dari kantor desa, biasanya: KTP, KK, akta kelahiran calon pengantin, surat pengantar RT/RW, dan dokumen pendukung lain sesuai ketentuan KUA setempat.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Keterangan Kelahiran / Kematian</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Isi syarat resmi: untuk kelahiran biasanya perlu surat dari bidan/RS + KK orang tua; untuk kematian perlu surat keterangan dari puskesmas/RS + KTP almarhum/ahli waris.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Keterangan Waris</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Isi syarat resmi: KTP & KK seluruh ahli waris, akta kematian pewaris, surat pengantar RT/RW, dan dokumen pendukung sesuai ketentuan setempat.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Pengantar Lokal</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Desa <strong>tidak menerbitkan izin keramaian, </strong>kantor desa hanya mengeluarkan surat pengantar lokal untuk acara/hajatan warga. Surat pengantar ini kemudian dibawa warga untuk mengurus izin resmi ke <strong>Polsek setempat</strong>. Syarat mengurus pengantar di desa: KTP penanggung jawab acara, surat pengantar RT/RW, dan estimasi tanggal atau waktu acara.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__trigger" aria-expanded="false"><span>Surat Pengantar SKCK</span><span class="accordion__icon">+</span></button>
+      <div class="accordion__panel"><p>Isi syarat resmi: KTP, KK, dan surat pengantar RT/RW sebagai dasar pengajuan SKCK ke Polsek/Polres setempat.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak Langsung</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja.</span>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

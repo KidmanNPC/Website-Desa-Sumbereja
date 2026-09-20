@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perdagangan</title>
+<meta name="description" content="Profil sektor perdagangan Desa Sumbereja beserta direktori usaha dagang, kuliner, material bangunan, jasa percetakan, dan bengkel warga.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js-ready");</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="masthead is-scrolled" id="masthead">
+  <div class="masthead__bar">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__mark" aria-hidden="true">⌂</span>
+      <span class="masthead__name">Desa Sumbereja</span>
+    </a>
+    <button class="masthead__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="primaryNav">
+      <a href="profil.html">Profil</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data-warga.html">Data Warga</a>
+      <a href="potensi.html" aria-current="page">Potensi</a>
+      <a href="warta.html">Warta</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <div class="masthead__dropdown" id="layananDropdown">
+        <button type="button" class="masthead__dropdown-btn" id="layananDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Pengaduan <span class="masthead__dropdown-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="masthead__dropdown-panel">
+          <a href="pengaduan.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span> Buat Pengaduan</a>
+          <a href="https://wa.me/6285218518516" target="_blank" rel="noopener"><span class="dd-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> Hubungi via WhatsApp</a>
+          <a href="riwayat.html"><span class="dd-icon" aria-hidden="true"><i class="fa-solid fa-clock-rotate-left"></i></span> Riwayat</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO HALAMAN -->
+<section class="tani-hero">
+  <span class="eyebrow">Potensi Desa — Perdagangan</span>
+  <h1>Usaha Dagang Warga Sumbereja</h1>
+  <p class="tani-hero__lede">Sektor perdagangan Desa Sumbereja digerakkan oleh usaha kecil milik warga — kuliner, material bangunan, jasa percetakan, hingga bengkel. Direktori ini murni informasi, untuk membantu warga saling mengenal &amp; mempromosikan usaha sekitar.</p>
+  <a href="potensi.html" class="tani-back">← Kembali ke Potensi Desa</a>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<!-- RINGKASAN ANGKA -->
+<section class="section">
+  <div class="fact-strip">
+    <div class="fact-strip__item"><span class="fact-strip__num">112</span><span class="fact-strip__label">Pemilik Usaha Perdagangan</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">112</span><span class="fact-strip__label">Buruh/Karyawan Pengumpul</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">7</span><span class="fact-strip__label">Kategori usaha</span></div>
+    <div class="fact-strip__item"><span class="fact-strip__num">6</span><span class="fact-strip__label">Kampung tersebar</span></div>
+  </div>
+</section>
+
+<div class="rule rule--alt" aria-hidden="true"></div>
+
+<section class="section" id="direktori">
+  <div class="section__head">
+    <span class="eyebrow">Direktori</span>
+    <h2>Daftar Usaha Dagang Desa</h2>
+  </div>
+
+  <div class="umkm-filter" id="umkmFilter">
+    <button class="umkm-filter__btn is-active" data-filter="semua">Semua</button>
+    <button class="umkm-filter__btn" data-filter="kuliner">Kuliner</button>
+    <button class="umkm-filter__btn" data-filter="grosir">Grosir</button>
+    <button class="umkm-filter__btn" data-filter="material">Material Bangunan</button>
+    <button class="umkm-filter__btn" data-filter="pupuk">Kios Pupuk</button>
+    <button class="umkm-filter__btn" data-filter="bengkel">Bengkel</button>
+    <button class="umkm-filter__btn" data-filter="cell">Toko Cell</button>
+    <button class="umkm-filter__btn" data-filter="jasa">Jasa</button>
+  </div>
+
+  <div class="carousel" id="umkmCarousel">
+    <div class="umkm-grid" id="umkmGrid">
+      <article class="umkm-card" data-category="kuliner">
+        <button class="umkm-card__image gallery__item" data-image="img/Pecel-lele.png" data-caption="Pecel Lele">
+          <img src="img/Pecel-lele.png" alt="Pecel Lele" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kuliner</span>
+        <h3>Pecel Lele</h3>
+        <p>Menyediakan berbagai menu seperti pecel ayam, pecel lele, dan bebek goreng, dengan harga terjangkau. Menjadi salah satu pilihan kuliner masyarakat Desa Sumbereja.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="grosir">
+        <button class="umkm-card__image gallery__item" data-image="img/Toko-dhea.jpg" data-caption="Toko Dhea">
+          <img src="img/Toko-dhea.jpg" alt="Toko Dhea" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Grosir</span>
+        <h3>Toko Dhea</h3>
+        <p>Menyediakan berbagai kebutuhan pokok dan perlengkapan rumah tangga, mulai dari sembako, gas LPG, air galon, hingga makanan dan minuman sehari-hari.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="material">
+        <button class="umkm-card__image gallery__item" data-image="img/Dicky-jaya.jpg" data-caption="TB. Dicky Jaya 2">
+          <img src="img/Dicky-jaya.jpg" alt="TB. Dicky Jaya 2" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Material Bangunan</span>
+        <h3>TB. Dicky Jaya 2</h3>
+        <p>Toko bangunan yang menyediakan berbagai kebutuhan material konstruksi dan renovasi rumah, seperti semen, pasir, besi, cat, keramik, pipa, serta perlengkapan bangunan lainnya untuk masyarakat Desa Sumbereja dan sekitarnya.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="kuliner">
+        <button class="umkm-card__image gallery__item" data-image="img/Nasi-padang.png" data-caption="Nasi Padang">
+          <img src="img/Nasi-padang.png" alt="Nasi Padang" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kuliner</span>
+        <h3>Nasi Padang</h3>
+        <p>Rumah makan yang menyajikan aneka masakan khas Padang, seperti rendang, ayam bakar, gulai, dan berbagai pilihan lauk dengan sistem prasmanan.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="kuliner">
+        <button class="umkm-card__image gallery__item" data-image="img/Warung-nasi.jpg" data-caption="Warung Nasi Mamah Anggun">
+          <img src="img/Warung-nasi.jpg" alt="Warung Nasi Mamah Anggun" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kuliner</span>
+        <h3>Warung Nasi Mamah Anggun</h3>
+        <p>Menyediakan aneka olahan ikan (mujair, bawal, lele), cumi, udang, aneka pepesan, seafood, gorengan, tumisan, gado-gado, dan nasi uduk.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+            <article class="umkm-card" data-category="kuliner">
+        <button class="umkm-card__image gallery__item" data-image="img/Siomay-Jakarta.jpg" data-caption="Siomay Jakarta">
+          <img src="img/Siomay-Jakarta.jpg" alt="Siomay Jakarta" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kuliner</span>
+        <h3>Siomay Jakarta</h3>
+        <p>Menyajikan siomay dengan cita rasa khas, lengkap dengan bumbu kacang yang gurih dan tekstur yang pas. Jajanan favorit untuk dinikmati kapan saja.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="kuliner">
+        <button class="umkm-card__image gallery__item" data-image="img/Mie-ayam.jpg" data-caption="Mie Ayam Bakso Mak Neng">
+          <img src="img/Mie-ayam.jpg" alt="Mie Ayam Bakso Mak Neng" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kuliner</span>
+        <h3>Mie Ayam Bakso Mak Neng</h3>
+        <p>Kedai mie ayam dengan bakso kenyal dan kaldu gurih yang segar.</p>
+        <span class="umkm-card__loc">Kp.  Kobak Cina</span>
+      </article>
+      <article class="umkm-card" data-category="jasa">
+        <button class="umkm-card__image gallery__item" data-image="img/Photocopy.png" data-caption="Fotocopy & Percetakan Sumbereja">
+          <img src="img/Photocopy.png" alt="Fotocopy & Percetakan Sumbereja" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Jasa</span>
+        <h3>Fotocopy &amp; Percetakan Sumbereja</h3>
+        <p>Layanan lengkap: fotocopy, cetak foto, print out, cetak kartu, cetak buku yasin, cetak undangan, scan dokumen, penjilidan, pengetikan, laminating, dll.</p>
+        <span class="umkm-card__loc">Kp. Pacing Lio</span>
+      </article>
+      <article class="umkm-card" data-category="jasa">
+        <button class="umkm-card__image gallery__item" data-image="img/Penjahit.jpg" data-caption="Penjahit & Konveksi">
+          <img src="img/Penjahit.jpg" alt="Penjahit & Konveksi" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Jasa</span>
+        <h3>Penjahit &amp; Konveksi</h3>
+        <p> Melayani pembuatan seragam sekolah, seragam batik, dan vermak/reparasi celana jeans (vermak levis).</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="grosir">
+        <button class="umkm-card__image gallery__item" data-image="img/Toko-sayuran.png" data-caption="Toko &amp; Sayuran">
+          <img src="img/Toko-sayuran.png" alt="Toko & Sayuran" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Grosir</span>
+        <h3>Toko &amp; Sayuran</h3>
+        <p>Menyediakan aneka sayuran segar hasil panen dan bumbu dapur kebutuhan rumah tangga sehari-hari dengan kualitas terjamin.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="bengkel">
+        <button class="umkm-card__image gallery__item" data-image="img/Bengkel-motor.jpg" data-caption="Bengkel Motor Mekar Wangi">
+          <img src="img/Bengkel-motor.jpg" alt="Bengkel Motor Mekar Wangi" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Bengkel</span>
+        <h3>Bengkel Motor Mekar Wangi</h3>
+        <p>Melayani servis dan sparepart sepeda motor untuk warga sekitar.</p>
+        <span class="umkm-card__loc">Kp. Tegal Pacing</span>
+      </article>
+      <article class="umkm-card" data-category="pupuk">
+        <button class="umkm-card__image gallery__item" data-image="img/Kios-pupuk.png" data-caption="Kios Pupuk">
+          <img src="img/Kios-pupuk.png" alt="Kios Pupuk" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Kios Pupuk</span>
+        <h3>Kios Pupuk</h3>
+        <p>Melayani penjualan pupuk dan kebutuhan pertanian lainnya.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+      <article class="umkm-card" data-category="cell">
+        <button class="umkm-card__image gallery__item" data-image="img/Toko-cell.png" data-caption="Toko Cell">
+          <img src="img/Toko-cell.png" alt="Toko Cell" loading="lazy">
+        </button>
+        <span class="umkm-card__tag">Toko Cell</span>
+        <h3>Toko Cell</h3>
+        <p>Melayani penjualan alat elektronik dan kebutuhan teknologi lainnya.</p>
+        <span class="umkm-card__loc">Kp. Cecendet</span>
+      </article>
+    </div>
+    <div class="carousel__controls">
+      <button class="carousel__btn" id="umkmPrev" aria-label="Sebelumnya">←</button>
+      <button class="carousel__btn" id="umkmNext" aria-label="Berikutnya">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox untuk memperbesar foto UMKM -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox__panel">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <img id="lightboxImg" src="" alt="Gambar Diperbesar" class="lightbox__img">
+    <p id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <div class="footer__grid">
+    <div>
+      <p class="footer__brand">Desa Sumbereja</p>
+      <p>Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat 17710</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>Telepon: 0852-1851-8516</p>
+      <p>Email: desasumbereja@gmail.com</p>
+    </div>
+    <div>
+      <h4>Jam Pelayanan</h4>
+      <p>Senin–Jumat, 08.00–15.00 WIB</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pemerintah Desa Sumbereja. Prototipe KKN.</span>
+  </div>
+</footer>
+
+<!-- FLOATING ACTIONS: perbesar teks, kembali ke atas, hubungi WA -->
+<div class="floating-actions">
+  <button id="btnFontSize" class="fab fab--text" aria-label="Perbesar ukuran teks" title="Ubah ukuran teks">Aa</button>
+  <button id="btnBackToTop" class="fab fab--top" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
